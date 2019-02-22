@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="live-card"
+>
+  <p
+    className="live-viewers"
+  >
+    <i
+      className="material-icons"
+    >
+      person
+    </i>
+    120,384
+  </p>
+  <a
+    href="https=//www.twitch.tv/shroud"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <img
+      alt="streamImage"
+      src="https://static-cdn.jtvnw.net/previews-ttv/live_user_shroud-320x180.jpg"
+    />
+  </a>
+  <div
+    className="live-streamerLogo"
+  >
+    <Link
+      replace={false}
+      to="/channel/37402112"
+    >
+      <img
+        alt=""
+        src="https://static-cdn.jtvnw.net/jtv_user_pictures/7ed5e0c6-0191-4eef-8328-4af6e4ea5318-profile_image-300x300.png"
+      />
+    </Link>
+  </div>
+  <div
+    className="live-infoPart"
+  >
+    <p
+      className="live-status"
+      title="APEX NOW  @shroud on socials for updates"
+    >
+      APEX NOW  @shroud on socials for updates
+    </p>
+    <Link
+      replace={false}
+      to="/channel/37402112"
+    >
+      <p
+        className="live-streamerName"
+      >
+        shroud
+      </p>
+    </Link>
+    <Link
+      replace={false}
+      to={
+        Object {
+          "pathname": "/game/Apex Legends",
+        }
+      }
+    >
+      <p
+        className="live-gameName"
+      >
+        Apex Legends
+      </p>
+    </Link>
+    <p
+      className="live-startedAt"
+    >
+      started 2 hours ago
+    </p>
+  </div>
+</div>
+`;

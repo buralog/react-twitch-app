@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="prev-card"
+>
+  <p
+    className="liveTag"
+  >
+    LIVE
+  </p>
+  <p
+    className="prev-durationTime"
+  >
+    13:08:39
+  </p>
+  <a
+    href="https=//www.twitch.tv/shroud"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <img
+      alt="streamImage"
+      src="https://static-cdn.jtvnw.net/previews-ttv/live_user_shroud-320x180.jpg"
+    />
+  </a>
+  <div
+    className="prev-infoPart"
+  >
+    <p
+      className="prev-status"
+      title="APEX NOW  @shroud on socials for updates"
+    >
+      APEX NOW  @shroud on socials for updates
+    </p>
+    <Link
+      replace={false}
+      to="/game/Apex Legends"
+    >
+      <p
+        className="prev-gameName"
+      >
+        Apex Legends
+      </p>
+    </Link>
+    <p
+      className="prev-views"
+    >
+      77,705
+       views
+    </p>
+    <p
+      className="prev-recordedAt"
+    >
+      14 days ago
+    </p>
+  </div>
+</div>
+`;
