@@ -76,7 +76,7 @@ class Profile extends Component {
       <div className="home-topContainer">
         <div>
           <h4 className="home-categTitle">
-            <Link style={{ color: "#333" }} to="/top-games">
+            <Link style={{ color: "#333" }} to="/categories">
               Top Categories
             </Link>
           </h4>

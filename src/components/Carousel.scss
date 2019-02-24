@@ -1,24 +1,21 @@
-  .clipTimeRange {
-    width:100%;
-    height: 27px;
-    font-family: Roboto;
-    font-size: 16px;
-    border-radius: 3px;
-    outline:none;
-  }
+.clipTimeRange {
+  width: 100%;
+  height: 27px;
+  font-family: Roboto;
+  font-size: 16px;
+  outline: none;
+}
 
-  .selectPos {
-    float: right;
-    margin-right: 20px;
-    margin-top: 5px;
-    border-radius: 5px;
-    background: black;
-    border: 1px solid;
-  }
+.selectPos {
+  float: right;
+  margin-right: 20px;
+  margin-top: 5px;
+  font-family: Roboto;
+}
 
-  .clipTitle {
-    float: left;
-    margin-left: 5px;
-    font-family: Roboto;
-    color:#333;
-  }
+.clipTitle {
+  float: left;
+  margin-left: 5px;
+  font-family: Roboto;
+  color: #333;
+}

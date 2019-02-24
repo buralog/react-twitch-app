@@ -6,7 +6,6 @@ import "./Navbar.scss";
 class MyNavbar extends React.Component {
   render() {
     return (
-      
       <Navbar className="background-color">
         <Nav pullLeft>
           <NavItem>
@@ -27,7 +26,7 @@ class MyNavbar extends React.Component {
             </Link>
           </NavItem>
           <NavItem>
-            <Link className="nav-links" to="/top-games">
+            <Link className="nav-links" to="/categories">
               Categories
             </Link>
           </NavItem>

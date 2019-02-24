@@ -12,21 +12,20 @@ import Homepage from "./pages/Homepage";
 class App extends Component {
   render() {
     return (
-      <BrowserRouter basename="/react-twitch-app" >
+      <BrowserRouter basename="/react-twitch-app">
         <div className="App">
           <div>
-            <Navbar/>
-            <Search/>
+            <Navbar />
+            <Search />
           </div>
           <Switch>
             <Route path="/featured-streams" component={FeaturedStreams} />
             <Route path="/top-streams" component={TopLiveStreams} />
             <Route path="/channel/:channel_id" component={UserProfile} />
             <Route path="/game/" component={GameProfile} />
-            <Route path="/top-games" component={Games} />
+            <Route path="/categories" component={Games} />
             <Route exact path="/" component={Homepage} />
           </Switch>
-          
         </div>
       </BrowserRouter>
     );

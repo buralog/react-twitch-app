@@ -78,7 +78,7 @@ class ReactCarousel extends Component {
     const selectDropdownRange = (
       <form>
         <select
-          className="browser-default clipTimeRange"
+          className="clipTimeRange"
           value={this.state.value}
           onChange={this.updateCategory}
         >
