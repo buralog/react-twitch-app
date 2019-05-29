@@ -4,7 +4,7 @@ ReacTwitch is a responsive React Single-Page Application that utilises [React Se
 
 
 ## Demo
-[ReacTwitch - Live Demo](https://buralog.github.io/react-twitch-app/)
+[ReacTwitch - Live Demo](https://reactwitch.netlify.com/)
 
 ## Stack
 
