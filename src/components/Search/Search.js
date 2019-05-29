@@ -2,7 +2,7 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 import AsyncSelect from "react-select/lib/Async";
 import _ from "lodash";
-import { GetSearchOptions } from "../services/Twitch";
+import { GetSearchOptions } from "../../services/Twitch";
 
 const asyncControl = {
   control: base => ({

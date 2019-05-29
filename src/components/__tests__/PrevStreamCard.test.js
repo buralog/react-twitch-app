@@ -1,4 +1,4 @@
-import PrevStreamCard from "./PrevStreamCard";
+import PrevStreamCard from "../PrevStreamCard";
 import React from "react";
 import { shallow } from "enzyme";
 

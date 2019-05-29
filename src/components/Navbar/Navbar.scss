@@ -1,0 +1,21 @@
+.nav-links {
+    font-family: Roboto;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+  
+    &:hover {
+      color: rgba(255, 255, 255, 1);
+      text-decoration: none;
+    }
+    &:focus {
+      color: rgba(255, 255, 255, 1);
+      text-decoration: none;
+    }
+  }
+  
+  .background-color {
+    margin-top: -1px;
+    background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+  }
+  

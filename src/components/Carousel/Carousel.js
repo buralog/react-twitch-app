@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import { Carousel } from "react-bootstrap";
 import PropTypes from "prop-types";
-import { GetClips } from "../services/Twitch";
+import { GetClips } from "../../services/Twitch";
 import "./Carousel.scss";
 
 class ReactCarousel extends Component {

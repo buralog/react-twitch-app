@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./Games.scss";
-import Loading from "../components/Loading";
-import { GetGames } from "../services/Twitch";
+import Loading from "../../components/Loader";
+import { GetGames } from "../../services/Twitch";
 
 const numberWithCommas = num =>
   num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");

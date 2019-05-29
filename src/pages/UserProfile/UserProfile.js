@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import moment from "moment";
 import toastr from "toastr";
-import Carousel from "../components/Carousel";
-import PrevStreamCard from "../components/PrevStreamCard";
-import Loading from "../components/Loading";
-import { GetOnlineInfo, GetUserStreams } from "../services/Twitch";
+import Carousel from "../../components/Carousel";
+import PrevStreamCard from "../../components/PrevStreamCard";
+import Loading from "../../components/Loader";
+import { GetOnlineInfo, GetUserStreams } from "../../services/Twitch";
 import "./UserProfile.scss";
 
 const numberWithCommas = num =>

@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./Homepage.scss";
-import Loading from "../components/Loading";
-import Carousel from "../components/Carousel";
-import StreamCard from "../components/LiveStreamCard";
-import { GetGames, GetStreams } from "../services/Twitch";
+import Loading from "../../components/Loader";
+import Carousel from "../../components/Carousel";
+import StreamCard from "../../components/LiveStreamCard";
+import { GetGames, GetStreams } from "../../services/Twitch";
 
 const numberWithCommas = num =>
   num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -76,7 +76,7 @@ class Profile extends Component {
       <div className="home-topContainer">
         <div>
           <h4 className="home-categTitle">
-            <Link style={{ color: "#333" }} to="/categories">
+            <Link style={{ color: "rgba(51, 51, 51, 0.9)" }} to="/categories">
               Top Categories
             </Link>
           </h4>
@@ -92,7 +92,7 @@ class Profile extends Component {
 
     const title_RecentStreams = (
       <h4 className="home-partTitle">
-        <Link style={{ color: "#333" }} to="/top-streams">
+        <Link style={{ color: "#333" }} to="/top">
           Top Streams
         </Link>
       </h4>
@@ -100,7 +100,7 @@ class Profile extends Component {
 
     const title_MostViewedStreams = (
       <h4 className="home-partTitle" style={{ marginTop: "20px" }}>
-        <Link style={{ color: "#333" }} to="/featured-streams">
+        <Link style={{ color: "#333" }} to="/featured">
           Featured Streams
         </Link>
       </h4>

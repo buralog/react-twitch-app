@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Loading from "../components/Loading";
-import LiveStreamCard from "../components/LiveStreamCard";
-import { GetStreams } from "../services/Twitch";
+import Loading from "../../components/Loader";
+import LiveStreamCard from "../../components/LiveStreamCard";
+import { GetStreams } from "../../services/Twitch";
 
 const style = {
   display: "flex",
@@ -11,7 +11,7 @@ const style = {
   marginBottom: "20px"
 };
 
-class topLiveStreams extends Component {
+class featuredStreams extends Component {
   state = {
     streams: [],
     error: null
@@ -19,9 +19,9 @@ class topLiveStreams extends Component {
 
   GetStreams = async () => {
     try {
-      let streams = await GetStreams();
-      let topStreams = await streams.streams;
-      this.setState({ streams: topStreams });
+      let streams = await GetStreams("featured");
+      let featured = await streams.featured;
+      this.setState({ streams: featured });
     } catch (error) {
       this.setState({ error: "error" });
       console.log(error);
@@ -47,14 +47,15 @@ class topLiveStreams extends Component {
       streams.map(stream => {
         return (
           <LiveStreamCard
-            viewers={stream.viewers}
-            url={stream.channel.url}
-            imgURL={stream.preview.medium}
-            routeParam={stream.channel._id}
-            logoURL={stream.channel.logo}
-            status={stream.channel.status}
-            name={stream.channel.display_name}
-            gameName={stream.channel.game}
+            key={stream.stream.channel._id}
+            viewers={stream.stream.viewers}
+            url={stream.stream.channel.url}
+            imgURL={stream.stream.preview.medium}
+            routeParam={stream.stream.channel._id}
+            logoURL={stream.stream.channel.logo}
+            status={stream.stream.channel.status}
+            name={stream.stream.channel.display_name}
+            gameName={stream.stream.channel.game}
           />
         );
       })
@@ -63,7 +64,6 @@ class topLiveStreams extends Component {
         <Loading />
       </div>
     );
-
     return (
       <div>
         <div style={style}>{renderStreams}</div>
@@ -72,4 +72,4 @@ class topLiveStreams extends Component {
   }
 }
 
-export default topLiveStreams;
+export default featuredStreams;

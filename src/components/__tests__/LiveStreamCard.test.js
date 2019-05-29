@@ -1,4 +1,4 @@
-import LiveStreamCard from "./LiveStreamCard";
+import LiveStreamCard from "../LiveStreamCard";
 import React from "react";
 import { shallow } from "enzyme";
 

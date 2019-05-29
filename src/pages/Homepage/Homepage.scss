@@ -1,0 +1,74 @@
+.home {
+    &-topContainer {
+      display: flex;
+      flex-flow: wrap;
+      justify-content: center;
+    }
+    &-categTitle {
+      float: left;
+      margin-left: 20px;
+      margin-top: 13px;
+      margin-bottom: 0;
+      color: #333;
+    }
+  
+    &-gamesList {
+      width: 670px;
+      height: 400px;
+      margin-left: 10px;
+      margin-top: 35px;
+    }
+  
+    &-carouselCard {
+      width: 640px;
+      height: 440px;
+      float: right;
+      margin-left: 15px;
+    }
+  
+    &-streamContainer {
+      margin-top: 90px;
+      margin-left: 5px;
+      display: flex;
+      flex-flow: wrap;
+      justify-content: center;
+    }
+  
+    &-partTitle {
+      font-size: 20px;
+      border-radius: 5px;
+      padding-right: 5px;
+      padding-left: 5px;
+      color: #333;
+      // line-height: 110%;
+      margin: 1.52rem 0 0.912rem 0;
+      text-align: center;
+      position: relative;
+      top: 80px;
+    }
+    &-gameCard {
+      position: relative;
+      background: rgb(222, 185, 253);
+      float: left;
+      top: 0px;
+      margin: 5px;
+      width: 210px;
+      height: 320px;
+      // box-shadow: 0px 8px 17px -8px rgba(0, 0, 0, 0.75);
+  
+      img {
+        width: 210px;
+        height: 250px;
+      }
+  
+      p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-family: Roboto;
+        text-align: center;
+        font-size: 17px;
+        overflow-wrap: break-word;
+      }
+    }
+  }
+  

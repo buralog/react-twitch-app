@@ -16,12 +16,12 @@ class MyNavbar extends React.Component {
         </Nav>
         <Nav pullRight>
           <NavItem>
-            <Link className="nav-links" to="/featured-streams">
+            <Link className="nav-links" to="/featured">
               Featured
             </Link>
           </NavItem>
           <NavItem>
-            <Link className="nav-links" to="/top-streams">
+            <Link className="nav-links" to="/top">
               Top Streams
             </Link>
           </NavItem>

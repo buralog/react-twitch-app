@@ -1,0 +1,32 @@
+.games {
+
+    &-card {
+     position: relative;
+     background: rgb(222, 185, 253);
+     float: left;
+     top: 0px;
+     margin: 5px;
+     width: 210px;
+     height: 320px;
+     // box-shadow: 0px 8px 17px -8px rgba(0, 0, 0, 0.75);
+     img {
+       width: 210px;
+       height: 250px;
+     }
+     p {
+       margin-top: 0px;
+       margin-bottom: 0px;
+       font-family: Roboto;
+       text-align: center;
+       font-size: 17px;
+       overflow-wrap: break-word;
+     }
+   }
+   
+   &-container {
+     margin-top: 0px;
+     display: flex;
+     flex-flow: wrap;
+     justify-content: center;
+   }
+   }

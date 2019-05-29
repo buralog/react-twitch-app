@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import moment from "moment";
-import Loading from "../components/Loading";
-import Carousel from "../components/Carousel";
-import LiveStreamCard from "../components/LiveStreamCard";
-import PrevStreamCard from "../components/PrevStreamCard";
+import Loading from "../../components/Loader";
+import Carousel from "../../components/Carousel";
+import LiveStreamCard from "../../components/LiveStreamCard";
+import PrevStreamCard from "../../components/PrevStreamCard";
 import "./GameProfile.scss";
-import { GetGameStreams, GetGameViewedStreams } from "../services/Twitch";
+import { GetGameStreams, GetGameViewedStreams } from "../../services/Twitch";
 
 class GameProfile extends Component {
   constructor(props) {
